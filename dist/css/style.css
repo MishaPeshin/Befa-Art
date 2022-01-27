@@ -483,10 +483,38 @@ progress {
   margin: 0 auto;
 }
 
+.title {
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.divider {
+  display: flex;
+  width: 289px;
+  height: 1px;
+  left: 1631px;
+  top: 964px;
+  background: #FFFFFF;
+  margin-right: 22px;
+}
+.divider_right {
+  flex-direction: row-reverse;
+  margin-right: 0;
+  margin-left: 22px;
+}
+
 .navigation {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
   display: flex;
   background-color: #B91616;
   height: 95px;
+  width: 100%;
 }
 .navigation__wrapper {
   height: 100%;
@@ -512,6 +540,7 @@ progress {
 
 .header {
   position: relative;
+  margin-top: 95px;
   background: #101010;
   height: 855px;
 }
@@ -554,4 +583,31 @@ progress {
 .header__grid_3 {
   grid-row-start: 1;
   grid-row-end: 3;
+}
+
+.portfolio {
+  background: #101010;
+}
+.portfolio__wrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.portfolio__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.portfolio__item {
+  max-width: 670px;
+  margin-bottom: 55px;
+}
+.portfolio__item:nth-child(2n+1) {
+  margin-right: 50px;
+}
+.portfolio__item:nth-child(2) {
+  margin-top: 40px;
+}
+.portfolio__item:nth-child(2n) {
+  margin-top: 15px;
 }
