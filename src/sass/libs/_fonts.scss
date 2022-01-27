@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Acworth';
+    font-display: swap;
+    src: local('acworth'),
+        url('../fonts/acworth-bold.otf') format('otf');
+    font-weight: 700;
+    font-style: normal;
+}
+// @font-face {
+//     font-family: 'KyivType Sans';
+//     font-display: swap;
+//     src: local('KyivType Sans'),
+//         url('../fonts/Dmitry Rastvortsev - KyivType Sans Black2.otf') format('otf');
+//     font-weight: 500;
+//     font-style: black;
+// }
+
+@font-face {
+    font-family: 'KyivType Sans';
+    font-display: swap;
+    src: local('Dmitry Rastvortsev - KyivType Sans'),
+        url('../fonts/Dmitry Rastvortsev - KyivType Sans Medium2.otf') format('otf');
+    font-weight: 500;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    font-display: swap;
+    src: local('Geometria'),
+        url('../fonts/Geometria-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    font-display: swap;
+    src: local('Geometria'),
+        url('../fonts/Geometria-Medium.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geometria';
+    font-display: swap;
+    src: local('Geometria'),
+        url('../fonts/Geometria-ExtraBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: 800;
+}
