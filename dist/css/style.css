@@ -648,6 +648,7 @@ progress {
   align-items: start;
 }
 .about__rectangle {
+  margin-top: 15px;
   width: 245px;
   height: 56px;
   background-color: #B91616;
@@ -670,4 +671,42 @@ progress {
   margin-top: 55px;
   z-index: 0;
   right: -10%;
+}
+
+.footer {
+  height: 145px;
+  background-color: #B91616;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__links {
+  width: 685px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__link {
+  font-family: KyivType Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.footer__link:hover {
+  color: #fff;
+}
+.footer__up {
+  color: #fff;
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer__up:hover {
+  color: #fff;
 }
