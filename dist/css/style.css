@@ -567,10 +567,10 @@ progress {
   color: #FFFFFF;
 }
 .header__item {
-  width: 430px;
+  max-width: 430px;
 }
 .header__item:last-child {
-  width: 910px;
+  max-width: 910px;
 }
 .header__grid {
   display: grid;
@@ -586,28 +586,44 @@ progress {
 }
 
 .portfolio {
+  position: relative;
   background: #101010;
 }
 .portfolio__wrapper {
   display: flex;
-  justify-content: end;
+  right: 0;
+  top: 0;
+  position: absolute;
   align-items: center;
 }
 .portfolio__items {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 670px 670px;
+  column-gap: 50px;
+  row-gap: 55px;
   justify-content: center;
 }
 .portfolio__item {
-  max-width: 670px;
-  margin-bottom: 55px;
-}
-.portfolio__item:nth-child(2n+1) {
-  margin-right: 50px;
-}
-.portfolio__item:nth-child(2) {
-  margin-top: 40px;
+  height: 395px;
 }
 .portfolio__item:nth-child(2n) {
-  margin-top: 15px;
+  padding-top: 70px;
+}
+.portfolio__img {
+  height: 395px;
+  width: 670px;
+}
+.portfolio__button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 132px;
+  width: 225px;
+  height: 65px;
+  background-color: #000;
+  border: 1px solid #fff;
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
 }
