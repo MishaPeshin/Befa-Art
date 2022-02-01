@@ -710,3 +710,11 @@ progress {
 .footer__up:hover {
   color: #fff;
 }
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
