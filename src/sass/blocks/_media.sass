@@ -1,0 +1,97 @@
+@media (max-width: 1439px)
+    .container
+        max-width: 1200px
+    .header
+        &__grid
+            grid-template-columns: 430px
+
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .navigation
+        height: 80px
+    .header
+        margin-top: 80px
+        &__wrapper
+            top: 190px
+        &__title
+            font-size: 194px
+        &__grid
+            padding-top: 80px
+
+
+@media (max-width: 992px)
+    .container 
+        max-width: 720px
+    .navigation
+        height: 73px
+    .header
+        margin-top: 73px
+        &__wrapper
+            top: 135px
+        &__title
+            font-size: 150px
+        &__grid
+            padding-top: 53px
+            grid-template-columns: 350px
+            column-gap: 35px
+            row-gap: 35px
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .navigation
+        display: block
+        align-items: start
+        &__wrapper
+            position: absolute
+            margin: 0
+            background-color: $main-color
+            height: 100vh
+            width: 50%
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: space-evenly
+            padding: 50px 0
+            left: 100%
+            transition: 0.5s all
+            &_active
+                left: 0
+        &__item
+            &:nth-child(3)
+                display: none
+        &__menu
+            display: flex
+        &__hamburger
+            &_active
+                span
+                    margin-bottom: -5px
+                    transition: 0.5s all
+                    &:nth-child(1)
+                        width: 16px
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        width: 16px
+                        transform: translateY(3px) rotate(45deg)
+    .header
+        &__title
+            font-size: 117px
+        &__grid
+            padding-top: 35px
+            grid-template-columns: 325px
+        &__wrapper
+            top: 117px
+
+@media (max-width: 576px)
+    .container
+            width: 100%
+            padding: 0 10px
+    .header
+        &__title
+            font-size: 60px
+        &__grid
+            grid-template-columns: 230px
+            height: 100%
