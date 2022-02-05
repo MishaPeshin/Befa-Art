@@ -605,6 +605,7 @@ progress {
   justify-content: center;
 }
 .portfolio__item {
+  position: relative;
   height: 395px;
 }
 .portfolio__item:nth-child(2n) {
@@ -627,6 +628,31 @@ progress {
   font-weight: 800;
   font-size: 18px;
   color: #fff;
+}
+.portfolio__descr {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.portfolio__subtitle {
+  margin-top: 125px;
+  margin-left: 80px;
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.portfolio__text {
+  width: 497px;
+  margin: 0 auto;
+  margin-top: 21px;
+  font-family: Geometria;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
 }
 
 .about {
@@ -717,4 +743,8 @@ progress {
 
 .show {
   display: block;
+}
+
+.hovered {
+  background-color: rgba(0, 0, 0, 0.5);
 }

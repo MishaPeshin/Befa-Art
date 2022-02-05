@@ -97,6 +97,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  //Accordion 
   const arts = document.querySelectorAll('.portfolio__item'),
         button = document.querySelector('.portfolio__button');
 
@@ -125,7 +126,30 @@ document.addEventListener('DOMContentLoaded', () => {
       hideArts();
     }
   });
-  hideArts();
+  arts.forEach(item => {
+    item.addEventListener('mouseenter', e => {});
+  });
+  hideArts(); //Cards events 
+
+  const cardsDescr = document.querySelectorAll('.portfolio__descr');
+
+  function hideCards(card) {
+    card.forEach(item => {
+      item.classList.add('hide');
+    });
+  }
+
+  hideCards(cardsDescr);
+  arts.forEach((item, i) => {
+    item.addEventListener('mouseover', () => {
+      cardsDescr[i].classList.remove('hide');
+      cardsDescr[i].classList.add('hovered');
+    });
+    item.addEventListener('mouseout', () => {
+      cardsDescr[i].classList.add('hide');
+      cardsDescr[i].classList.remove('hovered');
+    });
+  });
 });
 
 /***/ })
