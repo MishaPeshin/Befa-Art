@@ -635,14 +635,15 @@ progress {
 }
 .portfolio__item {
   position: relative;
+  width: 670px;
   height: 395px;
 }
 .portfolio__item:nth-child(2n) {
   padding-top: 70px;
 }
 .portfolio__img {
-  height: 395px;
   width: 670px;
+  height: 395px;
 }
 .portfolio__button {
   display: block;
@@ -722,6 +723,7 @@ progress {
   color: #B91616;
 }
 .about__img {
+  width: 60%;
   position: absolute;
   margin-top: 55px;
   z-index: 0;
@@ -776,11 +778,35 @@ progress {
 
 @media (max-width: 1439px) {
   .container {
-    max-width: 1200px;
+    max-width: 1140px;
   }
 
   .header__grid {
-    grid-template-columns: 430px;
+    grid-template-columns: 460px;
+  }
+
+  .portfolio__items {
+    grid-template-columns: 500px 500px;
+  }
+  .portfolio__item {
+    width: 500px;
+    height: 325px;
+  }
+  .portfolio__img {
+    width: 500px;
+    height: 325px;
+  }
+  .portfolio__subtitle {
+    margin: 60px 0 0 10px;
+  }
+  .portfolio__text {
+    width: 100%;
+    font-size: 17px;
+    margin: 35px 10px 0 10px;
+  }
+
+  .about__text {
+    width: 900px;
   }
 }
 @media (max-width: 1200px) {
@@ -803,6 +829,38 @@ progress {
   }
   .header__grid {
     padding-top: 80px;
+  }
+
+  .portfolio__items {
+    grid-template-columns: 460px 460px;
+  }
+  .portfolio__item {
+    width: 460px;
+    height: 325px;
+  }
+  .portfolio__img {
+    width: 460px;
+    height: 325px;
+  }
+  .portfolio__subtitle {
+    margin: 60px 0 0 10px;
+  }
+  .portfolio__text {
+    width: 100%;
+    font-size: 17px;
+    margin: 35px 10px 0 10px;
+  }
+
+  .about__content {
+    margin-top: 100px;
+  }
+  .about__rectangle {
+    width: 160px;
+  }
+  .about__text {
+    width: 800px;
+    font-size: 55px;
+    line-height: 60px;
   }
 }
 @media (max-width: 992px) {
@@ -828,6 +886,55 @@ progress {
     grid-template-columns: 350px;
     column-gap: 35px;
     row-gap: 35px;
+  }
+
+  .portfolio__items {
+    grid-template-columns: 350px 350px;
+  }
+  .portfolio__item {
+    width: 350px;
+    height: 225px;
+  }
+  .portfolio__img {
+    width: 350px;
+    height: 225px;
+  }
+  .portfolio__subtitle {
+    font-size: 16px;
+    margin: 30px 0 0 50px;
+  }
+  .portfolio__text {
+    font-size: 16px;
+    width: 100%;
+    margin: 15px 5px 0 5px;
+  }
+
+  .about {
+    padding-bottom: 200px;
+  }
+  .about__content {
+    margin-top: 80px;
+  }
+  .about__rectangle {
+    width: 110px;
+  }
+  .about__text {
+    width: 500px;
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .about__img {
+    margin-top: 55px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+  .footer__links {
+    width: 100%;
+  }
+  .footer__up {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -888,6 +995,54 @@ progress {
   .header__wrapper {
     top: 117px;
   }
+
+  .portfolio__items {
+    padding-top: 70px;
+    display: block;
+    margin: 0 auto;
+  }
+  .portfolio__item {
+    width: 100%;
+    height: 100%;
+    margin-top: 35px;
+  }
+  .portfolio__item:nth-child(2n) {
+    padding-top: 0;
+  }
+  .portfolio__item:first-child {
+    margin-top: 0;
+  }
+  .portfolio__img {
+    width: 100%;
+    height: 100%;
+  }
+  .portfolio__subtitle {
+    font-size: 20px;
+    margin: 80px 0 0 20px;
+  }
+  .portfolio__text {
+    font-size: 20px;
+    width: 100%;
+    margin: 15px 20px 0 20px;
+  }
+
+  .about {
+    padding-bottom: 200px;
+  }
+  .about__content {
+    margin-top: 80px;
+  }
+  .about__rectangle {
+    margin-top: 7px;
+    height: 30px;
+    width: 75px;
+  }
+  .about__text {
+    width: 480px;
+  }
+  .about__img {
+    margin-top: 55px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -901,5 +1056,45 @@ progress {
   .header__grid {
     grid-template-columns: 230px;
     height: 100%;
+  }
+
+  .portfolio__items {
+    padding-top: 70px;
+  }
+  .portfolio__text {
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+  .portfolio__subtitle {
+    margin: 0;
+  }
+
+  .about {
+    padding-bottom: 30px;
+  }
+  .about__content {
+    margin-top: 10px;
+  }
+  .about__rectangle {
+    width: 40px;
+    height: 15px;
+    margin-top: 4px;
+  }
+  .about__text {
+    width: 220px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .about__img {
+    margin-top: 15px;
+  }
+
+  .divider {
+    width: 71px;
+  }
+
+  .footer__link {
+    font-size: 13px;
   }
 }
